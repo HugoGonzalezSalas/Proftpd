@@ -35,4 +35,13 @@ D) Comprobamos la conectividad
 ```
 ![image](https://github.com/HugoGonzalezSalas/Proftpd/assets/114906900/f1058cb8-f415-4088-b877-2a09708e1124)
 
+D) Configurar mensaje de bienvenida y error:
+```
+nano /etc/proftpd/proftpd.conf
+  AccessGrantMsg "BIENVENIDO A MI SERVIDOR FTP, UN SALUDO DE PARTE DE HUGO."
+  AccessDenyMsg "Error al conectarte al servidor FTP de Hugo."
+```
+![image](https://github.com/HugoGonzalezSalas/Proftpd/assets/114906900/5edde289-e29d-4e54-9111-6d95dffb8549)
+
+
 
