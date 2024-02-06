@@ -33,5 +33,6 @@ D) Comprobamos la conectividad
 ```
  ftp 172.31.28.32 #ip de tu maquina/servidor
 ```
-![image](/img/foto1.PNG)
+![image](https://github.com/HugoGonzalezSalas/Proftpd/assets/114906900/f1058cb8-f415-4088-b877-2a09708e1124)
+
 
