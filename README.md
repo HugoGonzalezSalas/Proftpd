@@ -105,9 +105,11 @@ nano /etc/proftpd/proftpd.conf
  </Anonymous>
 ```
 Comprobamos que podemos crear directorios y archivos en la ruta asignada desde clonezilla con anonymous:
+
 ![image](https://github.com/HugoGonzalezSalas/Proftpd/assets/114906900/b419445b-eb5e-41e8-94bc-1fe0978a28d3)
 
 Comprobaciones en el servidor:
+
 ![image](https://github.com/HugoGonzalezSalas/Proftpd/assets/114906900/0009c70a-cf28-4ac6-a80e-62a50d64f7db)
 
 Efectivamente se crean los archivos y directorios en la ruta asignada.
