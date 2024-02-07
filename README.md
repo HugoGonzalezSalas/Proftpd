@@ -114,6 +114,48 @@ Comprobaciones en el servidor:
 
 Efectivamente se crean los archivos y directorios en la ruta asignada.
 
+Los permisos mas interesantes para limitar usuarios(en este caso anonymous) son:
+```
+nano /etc/proftpd/proftpd.conf
+ <Anonymous /home/anonymous>
+   User ftp
+   Group nogroup
+   UserAlias anonymous ftp
+   DirFakeUser on ftp
+   DirFakeGroup on ftp
+   RequireValidShell off
+   MaxClients 10
 
+   <Directory *>
+     <Limit STOR> #Permiso para subir archivos
+       AllowAll
+     </Limit>
+     <Limit DIRS> #Permiso para ver el contenido de los directorios
+        AllowAll
+     </Limit>
+     <Limit RMD> #Permiso para borrar directorios
+        DenyAll
+     </Limit>
+     <Limit MKD> #Permiso para crear directorios
+        AllowAll
+     </Limit>
+     <Limit WRITE> #Permiso de escritura
+        AllowAll
+     </Limit>
+     <Limit READ> #Permiso de lectura
+        AllowAll
+     </Limit>
+     <Limit DELE> #Permiso para borrar archivos
+        AllowAll
+     </Limit>
+     <Limit CWD> #Permiso para cambiar de directorio
+        AllowAll
+     </Limit>
+     <Limit RETR> #Permiso para recuperar archivos del servidor
+        AllowAll
+     </Limit>
+   </Directory>
+ </Anonymous>
+```
 
 
