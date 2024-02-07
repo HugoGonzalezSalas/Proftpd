@@ -173,3 +173,6 @@ nano /etc/proftpd/proftpd.conf
   RequireValidShell off
   AuthUserFile /etc/proftpd/ftpd.passwd
 ```
+Comprobamos desde Filezilla que nos podemos conectar como alumnos y que nos coje su directorio de forma predeterminada.
+
+![image](https://github.com/HugoGonzalezSalas/Proftpd/assets/114906900/9b031824-3fa4-48dd-8709-d4f7f92ee305)
