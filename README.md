@@ -52,7 +52,7 @@ nano /etc/proftpd/proftpd.conf
 ```
 ![image](https://github.com/HugoGonzalezSalas/Proftpd/assets/114906900/5edde289-e29d-4e54-9111-6d95dffb8549)
 
-## Anonymous
+## 3.- Anonymous
 
 Para conectarse como anonymous utilizaremos la herramiento filezilla. Pero antes deberemos hacer algunas configuraciones:
 ```
