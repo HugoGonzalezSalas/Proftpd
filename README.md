@@ -176,3 +176,21 @@ nano /etc/proftpd/proftpd.conf
 Comprobamos desde Filezilla que nos podemos conectar como alumnos y que nos coje su directorio de forma predeterminada.
 
 ![image](https://github.com/HugoGonzalezSalas/Proftpd/assets/114906900/9b031824-3fa4-48dd-8709-d4f7f92ee305)
+
+Podemos bloquear/desbloquear a usuarios con los siguientes comandos
+A)Bloquear:
+```
+ftpasswd --passwd --name=alumno --lock
+```
+
+![image](https://github.com/HugoGonzalezSalas/Proftpd/assets/114906900/5c41f7bf-38ac-422b-bca1-a0a3d3446014)
+
+
+B)Desbloquear:
+```
+ftpasswd --passwd --name=alumno --unlock
+```
+![image](https://github.com/HugoGonzalezSalas/Proftpd/assets/114906900/84a22068-a378-4c49-8f8e-31734b0830c5)
+
+
+
