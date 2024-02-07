@@ -157,5 +157,19 @@ nano /etc/proftpd/proftpd.conf
    </Directory>
  </Anonymous>
 ```
+## 4.- Usuarios Virtuales
+Son usuarios independientes de los usuarios del sistema. Realmente no existen como usuarios normales del sistema operativo. Un usuario virtual, no tiene cuenta REAL en el sistema.
 
-
+Preparativos para crear los usuarios:
+```
+sudo mkdir /home/alumno
+sudo chmod 777 /home/alumno/
+sudo ftpasswd --passwd --name=alumno --uid=2000 --gid=2000 --home=/home/alumno --shell=/bin/bash
+sudo mv ftpd.passwd /etc/proftpd/
+```
+Tendremos que añadir al fichero de configuración las siguientes lineas:
+```
+nano /etc/proftpd/proftpd.conf
+  RequireValidShell off
+  AuthUserFile /etc/proftpd/ftpd.passwd
+```
