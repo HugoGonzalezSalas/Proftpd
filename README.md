@@ -192,5 +192,5 @@ ftpasswd --passwd --name=alumno --unlock
 ```
 ![image](https://github.com/HugoGonzalezSalas/Proftpd/assets/114906900/84a22068-a378-4c49-8f8e-31734b0830c5)
 
-
-
+## Licencia
+![image](licencia.jpg)
